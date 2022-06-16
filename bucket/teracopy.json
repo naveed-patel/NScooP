@@ -11,7 +11,7 @@
     "persist": [
         "Options.ini",
         "main.db",
-		"license"
+        "license"
     ],
     "shortcuts": [
         [
