@@ -1,0 +1,33 @@
+{
+    "version": "23.20.0105",
+    "description": "File manager for Windows",
+    "homepage": "https://www.xyplorer.com",
+    "license": {
+        "identifier": "Shareware",
+        "url": "https://www.xyplorer.com/company.php#legal"
+    },
+    "url": "https://www.xyplorer.com/download/xyplorer_23.20.0105_beta_noinstall.zip",
+    "checkver": {
+        "url": "http://www.xyplorer.com/xyfc/viewtopic.php?f=1&t=4&sd=d",
+        "regex": "https://www.xyplorer.com/download/xyplorer_([\\d.]+)"
+    },
+    "autoupdate": {
+        "note": "Thanks for using autoupdate, please test your updates!",
+        "url": "https://www.xyplorer.com/download/xyplorer_$version_beta_noinstall.zip"
+    },
+    "bin": "XYplorer.exe",
+    "shortcuts": [
+        [
+            "XYplorer.exe",
+            "XYplorer"
+        ],
+        [
+            "XYplorer.exe",
+            "xy"
+        ]
+    ],
+    "persist": [
+        "Data",
+        "AC"
+    ]
+}
