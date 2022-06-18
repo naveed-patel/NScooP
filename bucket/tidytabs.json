@@ -1,0 +1,25 @@
+{
+    "version": "1.18.5",
+    "description": "Tabbed window manager for Windows",
+    "homepage": "https://www.nurgo-software.com/products/tidytabs",
+    "license": "Free for Personal Use",
+    "url": "https://www.nurgo-software.com/download/TidyTabs.zip",
+    "checkver": {
+        "url": "https://www.nurgo-software.com/company/news",
+        "regex": "TidyTabs v([\\d.]+)"
+    },
+    "autoupdate": {
+        "note": "Thanks for using autoupdate, please test your updates!"
+    },
+    "bin": "TidyTabs.Daemon.exe",
+    "shortcuts": [
+        [
+            "TidyTabs.Daemon.exe",
+            "TidyTabs"
+        ]
+    ],
+    "persist": [
+        "TidyTabs.cle",
+        "TidyTabs.conf"
+    ]
+}
