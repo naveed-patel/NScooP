@@ -1,15 +1,17 @@
 {
     "version": "2.9.3.3",
-    "description": "ln - command line hardlinks",
+    "description": "ln - command line hardlinks. This tool is kind of a NTFS Swiss Army Knife and can do lots of things, like create SmartCopies, which preserve the inner and outer Hardlink/Junction/SymbolicLink structure, does hardlink based incremental Backups and a lot of other things which can not be found anywhere.",
     "homepage": "https://schinagl.priv.at/nt/ln/ln.html",
     "license": "Freeware",
     "notes": "Check https://schinagl.priv.at/nt/ln/ln.html#introduction for usage. Substitute ln with lnp",
     "architecture": {
         "64bit": {
-            "url": "https://schinagl.priv.at/nt/ln/ln64static.zip"
+            "url": "https://schinagl.priv.at/nt/ln/ln64static.zip",
+            "hash": "7C62BD3F2656C3723C1A9C7BB772EE9AE67E30680E51CDC50BDEED3C7B3BCE33"
         },
         "32bit": {
-            "url": "https://schinagl.priv.at/nt/ln/lnstatic.zip"
+            "url": "https://schinagl.priv.at/nt/ln/lnstatic.zip",
+            "hash": "B804EFD9CE20AA23B9FCA72D1669E54D09FBD5A723B5B33BBF88F57C3DBB453D"
         }
     },
     "bin": [
@@ -18,7 +20,7 @@
             "lnp"
         ]
     ],
-    "checkver": "Version ([\\d.]+)",
+    "checkver": ">Last Updated .+ Version ([\\d.]+)<",
     "autoupdate": {
         "64bit": {
             "url": "https://schinagl.priv.at/nt/ln/ln64static.zip"
