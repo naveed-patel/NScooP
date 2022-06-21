@@ -1,0 +1,30 @@
+{
+    "version": "2.9.3.3",
+    "description": "ln - command line hardlinks",
+    "homepage": "https://schinagl.priv.at/nt/ln/ln.html",
+    "license": "Freeware",
+    "notes": "Check https://schinagl.priv.at/nt/ln/ln.html#introduction for usage. Substitute ln with lnp",
+    "architecture": {
+        "64bit": {
+            "url": "https://schinagl.priv.at/nt/ln/ln64static.zip"
+        },
+        "32bit": {
+            "url": "https://schinagl.priv.at/nt/ln/lnstatic.zip"
+        }
+    },
+    "bin": [
+        [
+            "ln.exe",
+            "lnp"
+        ]
+    ],
+    "checkver": "Version ([\\d.]+)",
+    "autoupdate": {
+        "64bit": {
+            "url": "https://schinagl.priv.at/nt/ln/ln64static.zip"
+        },
+        "32bit": {
+            "url": "https://schinagl.priv.at/nt/ln/lnstatic.zip"
+        }
+    }
+}
