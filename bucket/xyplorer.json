@@ -1,12 +1,13 @@
 {
-    "version": "23.20.0109",
+    "version": "23.20.0111",
     "description": "File manager for Windows",
     "homepage": "https://www.xyplorer.com",
     "license": {
         "identifier": "Shareware",
         "url": "https://www.xyplorer.com/company.php#legal"
     },
-    "url": "https://www.xyplorer.com/download/xyplorer_23.20.0109_beta_noinstall.zip",
+    "url": "https://www.xyplorer.com/download/xyplorer_23.20.0111_beta_noinstall.zip",
+    "hash": "40d92baf5e0cf038dbe30e3bed1435bf1467431b280eb163bb20a762d29b9ceb",
     "checkver": {
         "url": "http://www.xyplorer.com/xyfc/viewtopic.php?f=1&t=4&sd=d",
         "regex": "https://www.xyplorer.com/download/xyplorer_([\\d.]+)"
