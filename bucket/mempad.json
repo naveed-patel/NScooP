@@ -15,7 +15,7 @@
     },
     "checkver": {
         "url": "https://www.horstmuc.de/wmem.htm",
-        "regex": "MemPad ([\\d.]+) "
+        "regex": "MemPad ([\\d.]+)"
     },
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\Memlst.ini\")) { New-Item \"$dir\\Memlst.ini\" | Out-Null }"

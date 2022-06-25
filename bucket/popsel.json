@@ -15,7 +15,7 @@
     },
     "checkver": {
         "url": "https://www.horstmuc.de/wpop.htm",
-        "regex": "PopSel ([\\d.]+) "
+        "regex": "PopSel ([\\d.]+)"
     },
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\popsel.lst\")) { New-Item \"$dir\\popsel.lst\" | Out-Null }"

@@ -15,7 +15,7 @@
     },
     "checkver": {
         "url": "https://www.horstmuc.de/wqsel.htm",
-        "regex": "Qsel ([\\d.]+) "
+        "regex": "Qsel ([\\d.]+)"
     },
     "autoupdate": {
         "64bit": {
