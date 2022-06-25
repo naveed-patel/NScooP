@@ -1,0 +1,45 @@
+{
+    "version": "2.27",
+    "description": "Qsel is a launcher for frequently used programs, documents and web links.",
+    "homepage": "https://www.horstmuc.de/wqsel.htm",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.horstmuc.de/win64/qsel64.zip",
+            "hash": "50eb6d845f9d472b52d0c23e64bbeaa4765b4aac6eef206a279ff824f87c4648"
+        },
+        "32bit": {
+            "url": "https://www.horstmuc.de/win/qsel.zip",
+            "hash": "8b2b70760321f6aac92b44832f4d3a5ef9228960cb5721a9421ad59e5294335d"
+        }
+    },
+    "checkver": {
+        "url": "https://www.horstmuc.de/wqsel.htm",
+        "regex": "Qsel ([\\d.]+) "
+    },
+    "autoupdate": {
+        "64bit": {
+            "url": "https://www.horstmuc.de/win64/qsel64.zip"
+        },
+        "32bit": {
+            "url": "https://www.horstmuc.de/win/qsel.zip"
+        }
+    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\QselRedir.ini\")) { New-Item \"$dir\\QselRedir.ini\" -Value \"DataPath = Menus\" }",
+        "if (!(Test-Path \"$persist_dir\\Qsel.ini\")) { New-Item \"$dir\\Qsel.ini\" | Out-Null }"
+    ],
+    "bin": "qsel.exe",
+    "shortcuts": [
+        [
+            "Qsel.exe",
+            "Qsel"
+        ]
+    ],
+    "persist": [
+        "Menus",
+        "QselRedir.ini",
+        "Qsel.ini"
+    ],
+    "note": "Though menus can be kept anywhere, suggest to store it in Menus folder as it is persisted"
+}
