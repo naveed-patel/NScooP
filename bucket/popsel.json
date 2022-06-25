@@ -17,6 +17,9 @@
         "url": "https://www.horstmuc.de/wpop.htm",
         "regex": "PopSel ([\\d.]+) "
     },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\popsel.lst\")) { New-Item \"$dir\\popsel.lst\" | Out-Null }"
+    ],
     "autoupdate": {
         "64bit": {
             "url": "https://www.horstmuc.de/win64/popsel64.zip"
@@ -25,7 +28,12 @@
             "url": "https://www.horstmuc.de/win/popsel.zip"
         }
     },
-    "bin": "PopSel.exe",
+    "bin": [
+        [
+            "popsel.exe",
+            "popsel"
+        ]
+    ],
     "shortcuts": [
         [
             "PopSel.exe",
@@ -33,7 +41,8 @@
         ]
     ],
     "persist": [
-        "Menus"
+        "Menus",
+        "popsel.lst"
     ],
     "note": "Though menus can be kept anywhere, suggest to store it in Menus folder as it is persisted"
 }
