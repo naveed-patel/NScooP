@@ -40,6 +40,5 @@
         "Menus",
         "QselRedir.ini",
         "Qsel.ini"
-    ],
-    "note": "Though menus can be kept anywhere, suggest to store it in Menus folder as it is persisted"
+    ]
 }
