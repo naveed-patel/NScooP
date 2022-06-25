@@ -1,0 +1,44 @@
+{
+    "version": "4.1.4",
+    "description": "Resize Disk Volume without losing data -Redistribute disk space for free",
+    "homepage": "https://www.resize-c.com/",
+    "license": "Freeware",
+    "url": "https://download.resize-c.com/resizer-free-portable.zip",
+    "hash": "6fdcbfeccb4992494d8b360cf9315d08229be89d165d7fcd9bcf2d4b8d8da82c",
+    "checkver": {
+        "url": "https://www.resize-c.com/",
+        "regex": "What's New: Partition Resizer has been upgraded to new version v([\\d.]+)"
+    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\impr.lkeys\")) { New-Item \"$dir\\impr.lkeys\" | Out-Null }"
+    ],
+    "architecture": {
+        "64bit": {
+            "extract_dir": "resizer-free-portable\\x64"
+        },
+        "32bit": {
+            "extract_dir": "resizer-free-portable\\x32"
+        }
+    },
+    "post_install": [
+        "Remove-Item -Path $dir\\resizer-free-portable"
+    ],
+    "autoupdate": {
+        "url": "https://download.resize-c.com/resizer-free-portable.zip"
+    },
+    "bin": [
+        [
+            "dm.resizer.exe",
+            "dm.resizer"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "dm.resizer.exe",
+            "IM Magic Partition Resizer"
+        ]
+    ],
+    "persist": [
+        "impr.lkeys"
+    ]
+}
