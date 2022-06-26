@@ -25,6 +25,13 @@
     ],
     "persist": [
         "ClipboardHelpAndSpell.ini",
-        "DonationCoder_clipboardhelpandspell_Key.dat"
+        "DonationCoder_clipboardhelpandspell_Key.dat",
+        "Backups",
+        "Database",
+        "Dictionaries",
+        "PresetFormats",
+        "PresetViews",
+        "Sounds",
+        "Tools"
     ]
 }
