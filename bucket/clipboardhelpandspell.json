@@ -6,8 +6,8 @@
     "url": "https://www.donationcoder.com/Software/Mouser/clipboardhelpandspell/downloads/ClipboardHelpAndSpellPortable.zip",
     "hash": "6d370910db843289f6204c87a6cbfb5405f0cd3e4824be07f8a3952ee85c000c",
     "checkver": {
-        "url": "http://www.xyplorer.com/xyfc/viewtopic.php?f=1&t=4&sd=d",
-        "regex": "https://www.xyplorer.com/download/xyplorer_([\\d.]+)"
+        "url": "https://www.donationcoder.com/software/mouser/popular-apps/clipboard-help-and-spell",
+        "regex": "Download v([\\d.]+)"
     },
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\ClipboardHelpAndSpell.ini\")) { New-Item \"$dir\\ClipboardHelpAndSpell.ini\" | Out-Null }",
