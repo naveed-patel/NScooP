@@ -1,0 +1,30 @@
+{
+    "version": "2.46.01",
+    "description": "Clipboard Help+Spell is a clipboard history utility ",
+    "homepage": "https://www.donationcoder.com/software/mouser/popular-apps/clipboard-help-and-spell",
+    "license": "Freeware",
+    "url": "https://www.donationcoder.com/Software/Mouser/clipboardhelpandspell/downloads/ClipboardHelpAndSpellPortable.zip",
+    "hash": "6d370910db843289f6204c87a6cbfb5405f0cd3e4824be07f8a3952ee85c000c",
+    "checkver": {
+        "url": "http://www.xyplorer.com/xyfc/viewtopic.php?f=1&t=4&sd=d",
+        "regex": "https://www.xyplorer.com/download/xyplorer_([\\d.]+)"
+    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\ClipboardHelpAndSpell.ini\")) { New-Item \"$dir\\ClipboardHelpAndSpell.ini\" | Out-Null }",
+        "if (!(Test-Path \"$persist_dir\\DonationCoder_clipboardhelpandspell_Key.dat\")) { New-Item \"$dir\\DonationCoder_clipboardhelpandspell_Key.dat\" | Out-Null }"
+    ],
+    "autoupdate": {
+        "url": "https://www.donationcoder.com/Software/Mouser/clipboardhelpandspell/downloads/ClipboardHelpAndSpellPortable.zip"
+    },
+    "bin": "ClipboardHelpAndSpell.exe",
+    "shortcuts": [
+        [
+            "ClipboardHelpAndSpell.exe",
+            "ClipboardHelpAndSpell"
+        ]
+    ],
+    "persist": [
+        "ClipboardHelpAndSpell.ini",
+        "DonationCoder_clipboardhelpandspell_Key.dat"
+    ]
+}
