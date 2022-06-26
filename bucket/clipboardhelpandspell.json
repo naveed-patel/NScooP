@@ -13,6 +13,9 @@
         "if (!(Test-Path \"$persist_dir\\ClipboardHelpAndSpell.ini\")) { New-Item \"$dir\\ClipboardHelpAndSpell.ini\" | Out-Null }",
         "if (!(Test-Path \"$persist_dir\\DonationCoder_clipboardhelpandspell_Key.dat\")) { New-Item \"$dir\\DonationCoder_clipboardhelpandspell_Key.dat\" | Out-Null }"
     ],
+    "post_install": [
+        "Remove-Item -Recurse -Force -Path $dir\\*.original"
+    ],
     "autoupdate": {
         "url": "https://www.donationcoder.com/Software/Mouser/clipboardhelpandspell/downloads/ClipboardHelpAndSpellPortable.zip"
     },

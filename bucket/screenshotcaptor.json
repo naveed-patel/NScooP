@@ -14,6 +14,9 @@
         "if (!(Test-Path \"$persist_dir\\ScreenshotCaptorTools.ini\")) { New-Item \"$dir\\ScreenshotCaptorTools.ini\" | Out-Null }",
         "if (!(Test-Path \"$persist_dir\\DonationCoder_ScreenshotCaptor_Key.dat\")) { New-Item \"$dir\\DonationCoder_ScreenshotCaptor_Key.dat\" | Out-Null }"
     ],
+    "post_install": [
+        "Remove-Item -Recurse -Force -Path $dir\\*.original"
+    ],
     "autoupdate": {
         "url": "https://www.donationcoder.com/Software/Mouser/screenshotcaptor/downloads/ScreenshotCaptorPortable.zip"
     },
