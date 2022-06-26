@@ -4,14 +4,7 @@
     "homepage": "https://www.nurgo-software.com/products/tidytabs",
     "license": "Free for Personal Use",
     "url": "https://www.nurgo-software.com/download/TidyTabs.zip",
-    "checkver": {
-        "url": "https://www.nurgo-software.com/company/news",
-        "regex": "TidyTabs v([\\d.]+)"
-    },
-    "autoupdate": {
-        "note": "Thanks for using autoupdate, please test your updates!"
-    },
-    "bin": "TidyTabs.Daemon.exe",
+    "hash": "542b782cf1c518c10b70cedfec531005757d57dc5d56546a2fb2a291dd3ef206",
     "shortcuts": [
         [
             "TidyTabs.Daemon.exe",
@@ -21,5 +14,12 @@
     "persist": [
         "TidyTabs.cle",
         "TidyTabs.conf"
-    ]
+    ],
+    "checkver": {
+        "url": "https://www.nurgo-software.com/company/news",
+        "regex": "TidyTabs v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.nurgo-software.com/download/TidyTabs.zip"
+    }
 }

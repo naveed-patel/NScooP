@@ -13,6 +13,21 @@
             "hash": "8b2b70760321f6aac92b44832f4d3a5ef9228960cb5721a9421ad59e5294335d"
         }
     },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\QselRedir.ini\")) { New-Item \"$dir\\QselRedir.ini\" -Value \"DataPath = Menus\" }",
+        "if (!(Test-Path \"$persist_dir\\Qsel.ini\")) { New-Item \"$dir\\Qsel.ini\" | Out-Null }"
+    ],
+    "shortcuts": [
+        [
+            "Qsel.exe",
+            "Qsel"
+        ]
+    ],
+    "persist": [
+        "Menus",
+        "QselRedir.ini",
+        "Qsel.ini"
+    ],
     "checkver": {
         "url": "https://www.horstmuc.de/wqsel.htm",
         "regex": "Qsel ([\\d.]+)"
@@ -24,21 +39,5 @@
         "32bit": {
             "url": "https://www.horstmuc.de/win/qsel.zip"
         }
-    },
-    "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\QselRedir.ini\")) { New-Item \"$dir\\QselRedir.ini\" -Value \"DataPath = Menus\" }",
-        "if (!(Test-Path \"$persist_dir\\Qsel.ini\")) { New-Item \"$dir\\Qsel.ini\" | Out-Null }"
-    ],
-    "bin": "qsel.exe",
-    "shortcuts": [
-        [
-            "Qsel.exe",
-            "Qsel"
-        ]
-    ],
-    "persist": [
-        "Menus",
-        "QselRedir.ini",
-        "Qsel.ini"
-    ]
+    }
 }

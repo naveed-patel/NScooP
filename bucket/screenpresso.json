@@ -5,18 +5,17 @@
     "license": "Freeware",
     "url": "https://www.screenpresso.com/binaries/releases/stable/dotnet47/Screenpresso.exe",
     "hash": "2ccd33928b6fcf9ca07a664ec324176e861ffa43eeae9931fd06497a641b6a76",
+    "shortcuts": [
+        [
+            "Screenpresso.exe",
+            "Screenpresso"
+        ]
+    ],
     "checkver": {
         "url": "https://www.screenpresso.com/download/",
         "regex": "Latest version .([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://www.screenpresso.com/binaries/releases/stable/dotnet47/Screenpresso.exe"
-    },
-    "bin": "Screenpresso.exe",
-    "shortcuts": [
-        [
-            "Screenpresso.exe",
-            "Screenpresso"
-        ]
-    ]
+    }
 }

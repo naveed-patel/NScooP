@@ -4,14 +4,8 @@
     "homepage": "http://www.joejoesoft.com/vcms/97/",
     "license": "Freeware",
     "url": "http://www.joejoesoft.com/cms/file.php?f=userupload%2f8%2ffiles%2facv535.zip",
-    "checkver": {
-        "url": "http://www.joejoesoft.com/vcms/97/",
-        "regex": "Changes in v([\\d.]+)"
-    },
-    "autoupdate": {
-        "note": "Thanks for using autoupdate, please test your updates!",
-        "url": "http://www.joejoesoft.com/cms/file.php?f=userupload%2f8%2ffiles%2facv$cleanVersion.zip"
-    },
+    "hash": "0e25bdccea1be169c021e010b1cd0f151fc391446fe6b4760353175a18aa0b0d",
+    "extract_to": "",
     "pre_install": [
         "Rename-Item -Path $dir\\file.php $dir\\acv.zip",
         "Expand-Archive $dir\\acv.zip $dir",
@@ -27,10 +21,6 @@
         "Remove-Item -Path $dir\\acv.zip",
         "Remove-Item -Path $dir\\setup.exe"
     ],
-    "extract_to": [
-        ""
-    ],
-    "bin": "arsclip.exe",
     "shortcuts": [
         [
             "ArsClip.exe",
@@ -49,5 +39,12 @@
         "explorer.ini",
         "noright.ini",
         "programmacro.ini"
-    ]
+    ],
+    "checkver": {
+        "url": "http://www.joejoesoft.com/vcms/97/",
+        "regex": "Changes in v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "http://www.joejoesoft.com/cms/file.php?f=userupload%2f8%2ffiles%2facv$cleanVersion.zip"
+    }
 }

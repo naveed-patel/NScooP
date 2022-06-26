@@ -5,13 +5,6 @@
     "license": "Proprietary",
     "url": "https://download.resize-c.com/resizer-pro-portable.zip",
     "hash": "ea8a4ec9bf57c24a2c82c021daba5ca2fc27bb6b20834992cdf11fafbf220a38",
-    "checkver": {
-        "url": "https://www.resize-c.com/",
-        "regex": "What's New: Partition Resizer has been upgraded to new version v([\\d.]+)"
-    },
-    "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\impr.lkeys\")) { New-Item \"$dir\\impr.lkeys\" | Out-Null }"
-    ],
     "architecture": {
         "64bit": {
             "extract_dir": "resizer-pro-portable\\x64"
@@ -20,25 +13,20 @@
             "extract_dir": "resizer-pro-portable\\x32"
         }
     },
-    "post_install": [
-        "Remove-Item -Path $dir\\resizer-pro-portable"
-    ],
-    "autoupdate": {
-        "url": "https://download.resize-c.com/resizer-pro-portable.zip"
-    },
-    "bin": [
-        [
-            "dm.resizer.exe",
-            "dm.resizer"
-        ]
-    ],
+    "pre_install": "if (!(Test-Path \"$persist_dir\\impr.lkeys\")) { New-Item \"$dir\\impr.lkeys\" | Out-Null }",
+    "post_install": "Remove-Item -Path $dir\\resizer-pro-portable",
     "shortcuts": [
         [
             "dm.resizer.exe",
-            "IM Magic Partition Resizer"
+            "IM Magic Partition Resizer Pro"
         ]
     ],
-    "persist": [
-        "impr.lkeys"
-    ]
+    "persist": "impr.lkeys",
+    "checkver": {
+        "url": "https://www.resize-c.com/",
+        "regex": "What's New: Partition Resizer has been upgraded to new version v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://download.resize-c.com/resizer-pro-portable.zip"
+    }
 }

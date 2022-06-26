@@ -1,6 +1,6 @@
 {
     "version": "23.20.0114",
-    "description": "File manager for Windows",
+    "description": "Portable Dual Pane Multi-Tabbed File manager for Windows",
     "homepage": "https://www.xyplorer.com",
     "license": {
         "identifier": "Shareware",
@@ -8,6 +8,17 @@
     },
     "url": "https://www.xyplorer.com/download/xyplorer_23.20.0114_beta_noinstall.zip",
     "hash": "49d386713001808dfb04e4ab1dac20b60541b8199c7b69212f8b258155cbff93",
+    "bin": "XYplorer.exe",
+    "shortcuts": [
+        [
+            "XYplorer.exe",
+            "XYplorer"
+        ]
+    ],
+    "persist": [
+        "Data",
+        "AC"
+    ],
     "checkver": {
         "url": "http://www.xyplorer.com/xyfc/viewtopic.php?f=1&t=4&sd=d",
         "regex": "https://www.xyplorer.com/download/xyplorer_([\\d.]+)"
@@ -15,20 +26,5 @@
     "autoupdate": {
         "note": "Check update log at http://www.xyplorer.com/xyfc/viewtopic.php?f=1&t=4&sd=d",
         "url": "https://www.xyplorer.com/download/xyplorer_$version_beta_noinstall.zip"
-    },
-    "bin": "XYplorer.exe",
-    "shortcuts": [
-        [
-            "XYplorer.exe",
-            "XYplorer"
-        ],
-        [
-            "XYplorer.exe",
-            "xy"
-        ]
-    ],
-    "persist": [
-        "Data",
-        "AC"
-    ]
+    }
 }

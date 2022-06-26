@@ -6,22 +6,22 @@
     "url": "https://www.codesector.com/files/teracopy.zip",
     "hash": "f508babcf303682c95d7b6abe35c1c379d9f0dc81da91a040525331f01d14981",
     "extract_dir": "TeraCopy",
-    "bin": "TeraCopy.exe",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\options.ini\")) { New-Item \"$dir\\options.ini\" | Out-Null }",
         "if (!(Test-Path \"$persist_dir\\main.db\")) { New-Item \"$dir\\AquaSnap.db\" | Out-Null }",
         "if (!(Test-Path \"$persist_dir\\license\")) { New-Item \"$dir\\license\" | Out-Null }"
     ],
-    "persist": [
-        "Options.ini",
-        "main.db",
-        "license"
-    ],
+    "bin": "teracopy.exe",
     "shortcuts": [
         [
             "TeraCopy.exe",
             "TeraCopy"
         ]
+    ],
+    "persist": [
+        "Options.ini",
+        "main.db",
+        "license"
     ],
     "checkver": {
         "url": "https://codesector.com/downloads",

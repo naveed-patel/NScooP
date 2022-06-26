@@ -5,23 +5,21 @@
     "license": "Proprietary",
     "url": "https://lopesoft.com/fmtools/FileMenuTools-portable.exe#/dl.7z",
     "hash": "81240a58dc088bf8873ef34e2ea4821a6184f73bfd556c536a4359dc4710e1b9",
-    "bin": [
-        [
-            "App\\FileMenu Tools\\cmdfmt64.exe",
-            "FileMenuTools"
-        ],
-        [
-            "App\\FileMenu Tools\\cmdfmt.exe",
-            "FileMenuTools32"
-        ]
-    ],
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
+    "architecture": {
+        "32bit": {
+            "bin": "App\\FileMenu Tools\\cmdfmt.exe"
+        },
+        "64bit": {
+            "bin": "App\\FileMenu Tools\\cmdfmt64.exe"
+        }
+    },
     "shortcuts": [
         [
             "FileMenuTools.exe",
             "FileMenuTools"
         ]
     ],
-    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
     "persist": "Data",
     "checkver": {
         "url": "https://www.lopesoft.com/fmtools/version.txt/",
