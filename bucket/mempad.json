@@ -27,11 +27,13 @@
         "regex": "MemPad ([\\d.]+)"
     },
     "autoupdate": {
-        "64bit": {
-            "url": "https://www.horstmuc.de/win64/mempad64.zip"
-        },
-        "32bit": {
-            "url": "https://www.horstmuc.de/win/mempad.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://www.horstmuc.de/win64/mempad64.zip"
+            },
+            "32bit": {
+                "url": "https://www.horstmuc.de/win/mempad.zip"
+            }
         }
     }
 }

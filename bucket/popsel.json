@@ -30,11 +30,13 @@
         "regex": "PopSel ([\\d.]+)"
     },
     "autoupdate": {
-        "64bit": {
-            "url": "https://www.horstmuc.de/win64/popsel64.zip"
-        },
-        "32bit": {
-            "url": "https://www.horstmuc.de/win/popsel.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://www.horstmuc.de/win64/popsel64.zip"
+            },
+            "32bit": {
+                "url": "https://www.horstmuc.de/win/popsel.zip"
+            }
         }
     }
 }

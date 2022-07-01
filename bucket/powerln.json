@@ -22,11 +22,13 @@
     ],
     "checkver": ">Last Updated .+ Version ([\\d.]+)<",
     "autoupdate": {
-        "64bit": {
-            "url": "https://schinagl.priv.at/nt/ln/ln64static.zip"
-        },
-        "32bit": {
-            "url": "https://schinagl.priv.at/nt/ln/lnstatic.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://schinagl.priv.at/nt/ln/ln64static.zip"
+            },
+            "32bit": {
+                "url": "https://schinagl.priv.at/nt/ln/lnstatic.zip"
+            }
         }
     }
 }

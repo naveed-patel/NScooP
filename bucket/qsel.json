@@ -6,11 +6,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.horstmuc.de/win64/qsel64.zip",
-            "hash": "50eb6d845f9d472b52d0c23e64bbeaa4765b4aac6eef206a279ff824f87c4648"
+            "hash": "db802c2edd329e04ca659f7dd4a88d0198f04078c7b411c33f95f8c628b72750"
         },
         "32bit": {
             "url": "https://www.horstmuc.de/win/qsel.zip",
-            "hash": "8b2b70760321f6aac92b44832f4d3a5ef9228960cb5721a9421ad59e5294335d"
+            "hash": "2767f8737e48ff934e80c21709be73e396c92869a65bd58c942a3f2886e08d87"
         }
     },
     "pre_install": [
@@ -33,11 +33,13 @@
         "regex": "Qsel ([\\d.]+)"
     },
     "autoupdate": {
-        "64bit": {
-            "url": "https://www.horstmuc.de/win64/qsel64.zip"
-        },
-        "32bit": {
-            "url": "https://www.horstmuc.de/win/qsel.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://www.horstmuc.de/win64/qsel64.zip"
+            },
+            "32bit": {
+                "url": "https://www.horstmuc.de/win/qsel.zip"
+            }
         }
     }
 }
