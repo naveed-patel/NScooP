@@ -1,10 +1,10 @@
 {
-    "version": "1.19.1",
+    "version": "1.20.0",
     "description": "Tabbed window manager for Windows",
     "homepage": "https://www.nurgo-software.com/products/tidytabs",
     "license": "Free for Personal Use",
     "url": "https://www.nurgo-software.com/download/TidyTabs.zip",
-    "hash": "91736df7db409018da486a0f58727536b8329c252ab5b312e7875d8c1041e7d4",
+    "hash": "b4e145794328c54eab352ddec9e5b37c3cad1d80ac8ee576675ae2e160cba82d",
     "shortcuts": [
         [
             "TidyTabs.Daemon.exe",
