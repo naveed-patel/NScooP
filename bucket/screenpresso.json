@@ -1,10 +1,10 @@
 {
-    "version": "2.1.6",
+    "version": "2.1.7",
     "description": "Image and Video screen capture",
     "homepage": "https://www.screenpresso.com/",
     "license": "Freeware",
     "url": "https://www.screenpresso.com/binaries/releases/stable/dotnet47/Screenpresso.exe",
-    "hash": "135ecc7c67008007311507e2cd782694481cabee2554f9247e26df78b6329424",
+    "hash": "42b4b9451852a211747a2d5910eafa28153a62170af1d96a4a3e8be3905e04af",
     "shortcuts": [
         [
             "Screenpresso.exe",
