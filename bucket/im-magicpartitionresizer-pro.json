@@ -1,10 +1,10 @@
 {
-    "version": "4.1.4",
+    "version": "4.4",
     "description": "Resize Disk Volume without losing data -Redistribute disk space - Pro Edition",
     "homepage": "https://www.resize-c.com/",
     "license": "Proprietary",
     "url": "https://download.resize-c.com/resizer-pro-portable.zip",
-    "hash": "ea8a4ec9bf57c24a2c82c021daba5ca2fc27bb6b20834992cdf11fafbf220a38",
+    "hash": "626403f3beee0a4756ed9960a96cf7cd02d29dff5ccd4a7b61a40c57dcd5eae7",
     "architecture": {
         "64bit": {
             "extract_dir": "resizer-pro-portable\\x64"
