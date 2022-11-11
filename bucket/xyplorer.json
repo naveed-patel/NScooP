@@ -1,13 +1,13 @@
 {
-    "version": "23.70.0315",
+    "version": "23.70.0320",
     "description": "Portable Dual Pane Multi-Tabbed File manager for Windows",
     "homepage": "https://www.xyplorer.com",
     "license": {
         "identifier": "Shareware",
         "url": "https://www.xyplorer.com/company.php#legal"
     },
-    "url": "https://www.xyplorer.com/download/xyplorer_23.70.0315_beta_noinstall.zip",
-    "hash": "ac5245fe950cceb18cdc3f7ef09552872b9c151c0ef2f040bd034609e65d2cc2",
+    "url": "https://www.xyplorer.com/download/xyplorer_23.70.0320_beta_noinstall.zip",
+    "hash": "ea92a822a16bcbd99baa4f7b3076052f1e0361f654c6e6ec5ca3039f578581bf",
     "bin": "XYplorer.exe",
     "shortcuts": [
         [
