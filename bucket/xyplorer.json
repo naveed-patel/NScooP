@@ -1,13 +1,13 @@
 {
-    "version": "23.90.000",
+    "version": "23.90.0001",
     "description": "Portable Dual Pane Multi-Tabbed File manager for Windows",
     "homepage": "https://www.xyplorer.com",
     "license": {
         "identifier": "Shareware",
         "url": "https://www.xyplorer.com/company.php#legal"
     },
-    "url": "https://www.xyplorer.com/download/xyplorer_23.90.0000_noinstall.zip",
-    "hash": "18761730fc5ce98f80dd622f56357ddc3f318a73ab458c11c74d873f173b2265",
+    "url": "https://www.xyplorer.com/download/xyplorer_23.90.0001_beta_noinstall.zip",
+    "hash": "e38314d1c7524d476f331e50104da8093a40a6df3f42159f1235414e4f6bfcee",
     "bin": "XYplorer.exe",
     "shortcuts": [
         [
