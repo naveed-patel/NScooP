@@ -1,10 +1,10 @@
 {
-    "version": "5.35",
+    "version": "5.36",
     "description": "ArsClip is a freeware clipboard manager utility. ArsClip monitors the clipboard and keeps track of the entries.",
     "homepage": "http://www.joejoesoft.com/vcms/97/",
     "license": "Freeware",
-    "url": "http://www.joejoesoft.com/cms/file.php?f=userupload%2f8%2ffiles%2facv535.zip",
-    "hash": "0e25bdccea1be169c021e010b1cd0f151fc391446fe6b4760353175a18aa0b0d",
+    "url": "http://www.joejoesoft.com/cms/file.php?f=userupload%2f8%2ffiles%2facv536.zip",
+    "hash": "5ba93e378080e4effbbc1e55cee4fdf6ca8099dc4643008b61f2ab8c8114d68d",
     "extract_to": "",
     "pre_install": [
         "Rename-Item -Path $dir\\file.php $dir\\acv.zip",
