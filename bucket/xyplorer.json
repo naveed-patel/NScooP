@@ -8,6 +8,11 @@
     },
     "url": "https://www.xyplorer.com/download/xyplorer_24.00.0001_beta_noinstall.zip",
     "hash": "8559c0c541678c5a343a57d0029bc0fb912278308126416c4f77d50642a4a11a",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\lic.ini\")) { New-Item \"$dir\\lic.ini\" | Out-Null }",
+        "if (!(Test-Path \"$persist_dir\\startup.ini\")) { New-Item \"$dir\\startup.ini\" | Out-Null }",
+        "if (!(Test-Path \"$persist_dir\\admin.ini\")) { New-Item \"$dir\\admin.ini\" | Out-Null }"
+    ],
     "bin": "XYplorer.exe",
     "shortcuts": [
         [
@@ -17,7 +22,10 @@
     ],
     "persist": [
         "Data",
-        "AC"
+        "AC",
+        "startup.ini",
+        "admin.ini",
+        "lic.ini"
     ],
     "checkver": {
         "url": "http://www.xyplorer.com/xyfc/viewtopic.php?f=1&t=4&sd=d",
