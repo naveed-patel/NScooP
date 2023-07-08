@@ -1,10 +1,10 @@
 {
-    "version": "3.9.7",
+    "version": "3.5",
     "description": "TeraCopy. A popular utility designed to copy files faster and more reliably, providing the user with many features.",
     "homepage": "http://www.codesector.com/teracopy",
     "license": "free for home users",
     "url": "https://www.codesector.com/files/teracopy.zip",
-    "hash": "2f38a23c854b953238030864e9ed3c39fd8f158fac480191b539efef349fb0c9",
+    "hash": "a93e801d214f3cd200377e4f317421c223192d78993ea8c09577be9053f056e8",
     "extract_dir": "TeraCopy",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\options.ini\")) { New-Item \"$dir\\options.ini\" | Out-Null }",
