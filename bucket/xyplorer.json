@@ -1,13 +1,13 @@
 {
-    "version": "25.70.0119",
+    "version": "25.70.0120",
     "description": "Portable Dual Pane Multi-Tabbed File manager for Windows",
     "homepage": "https://www.xyplorer.com",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.xyplorer.com/company.php#legal"
     },
-    "url": "https://www.xyplorer.com/download/xyplorer_25.70.0119_beta_noinstall.zip",
-    "hash": "10f8a723ffb8a0c3d07dd18028f39d05046ad63727b2fefd5a58d283e1bc71e3",
+    "url": "https://www.xyplorer.com/download/xyplorer_25.70.0120_beta_noinstall.zip",
+    "hash": "a8b97ddbf19854e4b407f31db07b41a0c1cdedfde00d16f8d46879ada28355c1",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\lic.ini\")) { New-Item \"$dir\\lic.ini\" | Out-Null }",
         "if (!(Test-Path \"$persist_dir\\startup.ini\")) { New-Item \"$dir\\startup.ini\" | Out-Null }",
