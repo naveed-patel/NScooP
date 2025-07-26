@@ -1,10 +1,10 @@
 {
-    "version": "4.9.8.0",
+    "version": "4.9.9.0",
     "description": "ECMA-compliant C# based scripting platform",
     "homepage": "https://www.cs-script.net/",
     "license": "MIT",
-    "url": "https://github.com/oleg-shilo/cs-script/releases/download/v4.9.8.0/cs-script.win.v4.9.8.0.7z",
-    "hash": "07507e8973351603ee8532099c9b8afbe7348a4fe51c2d206c6697ccd6448e8c",
+    "url": "https://github.com/oleg-shilo/cs-script/releases/download/v4.9.9.0/cs-script.win.v4.9.9.0.7z",
+    "hash": "b86ccd9e56bf3396be482258ba586fd457644c489e351fa322666e7503d2b0da",
     "bin": [
         "cscs.exe",
         "css.exe",
