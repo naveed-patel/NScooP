@@ -1,0 +1,27 @@
+{
+    "version": "5.2.0",
+    "description": "A cross-platform context-aware key remapper.",
+    "homepage": "https://github.com/houmain/keymapper",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/houmain/keymapper/releases/download/5.2.0/keymapper-5.2.0-Windows-x86_64.zip",
+            "hash": "b9c4ad9b065b48fb9f782cbb3150a685da5ab01ee4dc4a381ecec4a5794ee6b9"
+        }
+    },
+    "extract_dir": "keymapper-5.2.0-Windows-x86_64",
+    "bin": [
+        "keymapper.exe",
+        "keymapperctl.exe",
+        "keymapperd.exe"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/houmain/keymapper/releases/download/$version/keymapper-$version-Windows-x86_64.zip"
+            }
+        },
+        "extract_dir": "keymapper-$version-Windows-x86_64"
+    }
+}
