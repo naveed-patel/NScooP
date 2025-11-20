@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.quickaccesspopup.com/",
     "description": "The ideal productivity booster to access and manage your documents and control your digital work environment",
-    "version": "12.0",
+    "version": "12.1",
     "license": "Free",
     "url": "https://www.quickaccesspopup.com/download/quickaccesspopup.zip",
-    "hash": "c32c8d0e1232d75777e91f4b253df45d024acb872b700c5d340f99c88dff3432",
+    "hash": "d760cff1c45f98723a55a4f0759eeaeda23cd8aa832a55a22b8080f5399573ba",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\QuickAccessPopup.ini\")) { New-Item \"$dir\\QuickAccessPopup.ini\" | Out-Null }",
         "if (!(Test-Path \"$persist_dir\\QAPconnect.ini\")) { New-Item \"$dir\\QAPconnect.ini\" | Out-Null }",
