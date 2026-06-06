@@ -1,13 +1,13 @@
 {
-    "version": "27.20.140",
+    "version": "27.20.1401",
     "description": "Portable Dual Pane Multi-Tabbed File manager for Windows",
     "homepage": "https://www.xyplorer.com",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.xyplorer.com/company.php#legal"
     },
-    "url": "https://www.xyplorer.com/download/xyplorer_27.20.1400_noinstall.zip",
-    "hash": "109819595294f0c07e7a615d0eb3b716a8031ed017fc36c6d947aa170d17e030",
+    "url": "https://www.xyplorer.com/download/xyplorer_27.20.1401_beta_noinstall.zip",
+    "hash": "702d466e94b8e85f73956fbf7497ce53f4c52df49cd4227dc7d95aa3ccd72442",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\lic.ini\")) { New-Item \"$dir\\lic.ini\" | Out-Null }",
         "if (!(Test-Path \"$persist_dir\\startup.ini\")) { New-Item \"$dir\\startup.ini\" | Out-Null }",
@@ -28,11 +28,11 @@
         "lic.ini"
     ],
     "checkver": {
-        "url": "http://www.xyplorer.com/xyfc/viewtopic.php?f=1&t=4&sd=d",
+        "url": "http://www.xyplorer.com/xyfc2/viewtopic.php?f=1&t=4&sd=d",
         "regex": "2. .a href=\"https://www.xyplorer.com/download/xyplorer_([\\d.]+)(.+?_noinstall).zip"
     },
     "autoupdate": {
-        "note": "Check update log at http://www.xyplorer.com/xyfc/viewtopic.php?f=1&t=4&sd=d",
+        "note": "Check update log at http://www.xyplorer.com/xyfc2/viewtopic.php?f=1&t=4&sd=d",
         "url": "https://www.xyplorer.com/download/xyplorer_$version$match2.zip"
     }
 }
