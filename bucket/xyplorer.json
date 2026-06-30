@@ -1,13 +1,13 @@
 {
-    "version": "27.20.1405",
+    "version": "27.20.1406",
     "description": "Portable Dual Pane Multi-Tabbed File manager for Windows",
     "homepage": "https://www.xyplorer.com",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.xyplorer.com/company.php#legal"
     },
-    "url": "https://www.xyplorer.com/download/xyplorer_27.20.1405_beta_noinstall.zip",
-    "hash": "37f2675df621e84aece0eb89ea8cc01240b4e85a338ff5d690aac9d41b30de08",
+    "url": "https://www.xyplorer.com/download/xyplorer_27.20.1406_beta_noinstall.zip",
+    "hash": "01440a4cb747acf9816f7bd3908e3d6632e52a963f3ef9309428cba0923a0cbc",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\lic.ini\")) { New-Item \"$dir\\lic.ini\" | Out-Null }",
         "if (!(Test-Path \"$persist_dir\\startup.ini\")) { New-Item \"$dir\\startup.ini\" | Out-Null }",
