@@ -28,7 +28,7 @@
     ],
     "checkver": {
         "url": "https://www.xyplorer.com/xyfc/viewtopic.php?t=28739&sd=d",
-        "regex": "2. .a href=\"https://www.xyplorer.com/download/xyplorer64_([\\d.]+)(.*?_beta_noinstall).zip"
+        "regex": "2. .a href=\"https://www.xyplorer.com/download/xyplorer64_([\\d.]+)(.*?_noinstall).zip"
     },
     "autoupdate": {
         "note": "Check update log at https://www.xyplorer.com/xyfc/viewtopic.php?t=28739&sd=d",
